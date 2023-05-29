@@ -1,5 +1,5 @@
 echo -e "\e[31mCpopying repo file\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo   &>>/tmp/roboshop.log
+cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo   &>>/tmp/roboshop.log
 echo -e "\e[32mInstalling mongo db\e[0m"
 yum install mongodb-org -y  &>>/tmp/roboshop.log
 echo -e "\e[33mEdit the network gateways\e[0m"
